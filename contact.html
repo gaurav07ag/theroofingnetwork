@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | The Roofing Network</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 8 L94 46 H82 V90 H18 V46 H6 Z" stroke="#1F5C97" stroke-width="6" stroke-linejoin="round" fill="none"/>
+        <rect x="37" y="48" width="12" height="12" fill="#1F5C97"/>
+        <rect x="51" y="48" width="12" height="12" fill="#1F5C97"/>
+        <rect x="37" y="62" width="12" height="12" fill="#1F5C97"/>
+        <rect x="51" y="62" width="12" height="12" fill="#1F5C97"/>
+      </svg>
+      <span class="logo-text">THE<br><strong>ROOFING</strong><br>NETWORK</span>
+    </a>
+
+    <nav class="main-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Services <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="index.html#roofing">Roofing Services</a>
+          <a href="index.html#siding">Siding Services</a>
+          <a href="index.html#gutters">Gutter Services</a>
+          <a href="index.html#windows">Windows &amp; Doors</a>
+        </div>
+      </div>
+      <a href="index.html#about">About Us</a>
+    </nav>
+
+    <a href="index.html#quote" class="btn btn-primary header-cta">Get A Free Quote</a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- CONTACT HERO BANNER -->
+<section class="legal-hero contact-hero">
+  <div class="container">
+    <p class="eyebrow">Get In Touch</p>
+    <h1>Contact Us</h1>
+    <p class="legal-updated">We typically respond within one business day.</p>
+  </div>
+</section>
+
+<!-- CONTACT BODY -->
+<section class="contact-section">
+  <div class="container contact-grid">
+
+    <!-- LEFT — info cards -->
+    <div class="contact-info">
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 12C8 10.9 8.9 10 10 10H38C39.1 10 40 10.9 40 12V36C40 37.1 39.1 38 38 38H10C8.9 38 8 37.1 8 36V12Z" stroke="#1F5C97" stroke-width="2.5"/>
+            <path d="M8 12L24 26L40 12" stroke="#E76F36" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div>
+          <h4>Email Us</h4>
+          <p>admin@theroofingnetwork.com</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 8H18L22 18L17 23C19.6 28.3 23.7 32.4 29 35L34 30L44 34V42C44 43.1 43.1 44 42 44C22.1 44 6 27.9 6 8C6 6.9 6.9 6 8 6H10Z" stroke="#1F5C97" stroke-width="2.5"/>
+            <path d="M30 8C35.5 8 40 12.5 40 18" stroke="#E76F36" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M30 14C32.2 14 34 15.8 34 18" stroke="#E76F36" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h4>Call Us</h4>
+          <p>Call: 833-CRN-ROOF<br>Text: 602-586-9354</p>
+        </div>
+      </div>
+
+      
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="16" stroke="#1F5C97" stroke-width="2.5"/>
+            <path d="M24 14V24L30 30" stroke="#E76F36" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h4>Business Hours</h4>
+          <p>Mon – Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 2:00 PM</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT — contact form -->
+    <div class="contact-form-wrap">
+      <h2>Send us a message</h2>
+      <p class="contact-form-sub">Fill out the form below and our team will get back to you shortly.</p>
+
+      <form class="contact-form" id="contactForm">
+
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-name">Full Name <span class="req">*</span></label>
+            <input type="text" id="cf-name" name="name" placeholder="John Smith" required>
+          </div>
+          <div class="cf-field">
+            <label for="cf-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="cf-phone" name="phone" placeholder="+1 (555) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="cf-field">
+          <label for="cf-email">Email Address <span class="req">*</span></label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="cf-field">
+          <label for="cf-service">Service You're Interested In</label>
+          <select id="cf-service" name="service">
+            <option value="" disabled selected>Select a service</option>
+            <option>Roofing</option>
+            <option>Siding</option>
+            <option>Gutters</option>
+            <option>Windows &amp; Doors</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="cf-field">
+          <label for="cf-message">Message <span class="req">*</span></label>
+          <textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your project or question..." required></textarea>
+        </div>
+
+        <!-- SMS OPT-IN CHECKBOX -->
+        <div class="sms-optin">
+          <label class="sms-optin-label">
+            <input type="checkbox" id="smsConsent" name="smsConsent" value="yes">
+            <span class="sms-optin-box"></span>
+            <span class="sms-optin-text">
+              By checking this box, you agree to receive text messages (e.g., payment reminders) from <strong>The Roofing Network</strong> at the cell number used when signing up. Consent is not a condition of any purchase. Reply <strong>STOP</strong> to unsubscribe, <strong>HELP</strong> for help. Message &amp; data rates may apply. Message frequency varies. I have read and agree with the <a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a> &amp; <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+            </span>
+          </label>
+          <p class="sms-optin-note">This checkbox is optional. You may still submit the form without opting in to SMS.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p class="form-success" hidden>Thank you! Your message has been sent. We'll be in touch shortly.</p>
+        <p class="form-error" hidden>Something went wrong. Please try again or call us directly.</p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo logo-light">
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8 L94 46 H82 V90 H18 V46 H6 Z" stroke="#5FA8DC" stroke-width="6" stroke-linejoin="round" fill="none"/>
+          <rect x="37" y="48" width="12" height="12" fill="#5FA8DC"/>
+          <rect x="51" y="48" width="12" height="12" fill="#5FA8DC"/>
+          <rect x="37" y="62" width="12" height="12" fill="#5FA8DC"/>
+          <rect x="51" y="62" width="12" height="12" fill="#5FA8DC"/>
+        </svg>
+        <span class="logo-text">THE<br><strong>ROOFING</strong><br>NETWORK</span>
+      </a>
+      <p>Licensed, insured, and committed to roofs, siding, gutters, and windows that hold up — backed by local crews you can actually call.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">t</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="index.html#roofing">Installation</a>
+      <a href="index.html#roofing">Renovation</a>
+      <a href="index.html#roofing">Roof Repair</a>
+      <a href="index.html#siding">Siding Corner</a>
+      <a href="index.html#roofing">Roofing Layer</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="index.html#about">About Us</a>
+      <a href="#">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Help Center</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Newsletter</h4>
+      <p>Sign up for roof care tips, seasonal maintenance reminders, and promotions.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Copyright. All rights reserved by The Roofing Network.</p>
+    <p>Your Roofing Solutions</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

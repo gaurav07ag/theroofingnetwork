@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locations We Serve | The Roofing Network</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 8 L94 46 H82 V90 H18 V46 H6 Z" stroke="#1F5C97" stroke-width="6" stroke-linejoin="round" fill="none"/>
+        <rect x="37" y="48" width="12" height="12" fill="#1F5C97"/>
+        <rect x="51" y="48" width="12" height="12" fill="#1F5C97"/>
+        <rect x="37" y="62" width="12" height="12" fill="#1F5C97"/>
+        <rect x="51" y="62" width="12" height="12" fill="#1F5C97"/>
+      </svg>
+      <span class="logo-text">THE<br><strong>ROOFING</strong><br>NETWORK</span>
+    </a>
+
+    <nav class="main-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Services <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="index.html#roofing">Roofing Services</a>
+          <a href="index.html#siding">Siding Services</a>
+          <a href="index.html#gutters">Gutter Services</a>
+          <a href="index.html#windows">Windows &amp; Doors</a>
+        </div>
+      </div>
+      <a href="locations.html">Locations</a>
+      <a href="index.html#about">About Us</a>
+    </nav>
+
+    <a href="index.html#quote" class="btn btn-primary header-cta">Get A Free Quote</a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- LOCATIONS HERO -->
+<section class="legal-hero">
+  <div class="container">
+    <p class="eyebrow">Where We Work</p>
+    <h1>Locations We Serve</h1>
+    <p class="legal-updated">Licensed local crews backed by one trusted network — find your state below.</p>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="locations-section">
+  <div class="container">
+
+    <div class="locations-map-wrap">
+      <div id="usMap" class="us-map"></div>
+      <div class="map-tooltip" id="mapTooltip"></div>
+    </div>
+
+    <div class="locations-legend">
+      <span class="legend-item"><i class="legend-pin available"></i> Available</span>
+      <span class="legend-item"><i class="legend-pin claimed"></i> Claimed by another contractor</span>
+    </div>
+
+    <div class="locations-list" id="locationsList">
+      <p class="locations-empty">We're actively expanding — check back soon, or <a href="contact.html">contact us</a> to ask if we cover your area.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="quote">
+  <div class="container cta-inner">
+    <div class="cta-copy">
+      <h2>Don't see your state yet?</h2>
+      <p>We're growing our network of licensed local crews every month. Reach out and we'll let you know when we're in your area.</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo logo-light">
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8 L94 46 H82 V90 H18 V46 H6 Z" stroke="#5FA8DC" stroke-width="6" stroke-linejoin="round" fill="none"/>
+          <rect x="37" y="48" width="12" height="12" fill="#5FA8DC"/>
+          <rect x="51" y="48" width="12" height="12" fill="#5FA8DC"/>
+          <rect x="37" y="62" width="12" height="12" fill="#5FA8DC"/>
+          <rect x="51" y="62" width="12" height="12" fill="#5FA8DC"/>
+        </svg>
+        <span class="logo-text">THE<br><strong>ROOFING</strong><br>NETWORK</span>
+      </a>
+      <p>Licensed, insured, and committed to roofs, siding, gutters, and windows that hold up — backed by local crews you can actually call.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">t</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="index.html#roofing">Installation</a>
+      <a href="index.html#roofing">Renovation</a>
+      <a href="index.html#roofing">Roof Repair</a>
+      <a href="index.html#siding">Siding Corner</a>
+      <a href="index.html#roofing">Roofing Layer</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="index.html#about">About Us</a>
+      <a href="locations.html">Locations</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Help Center</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Newsletter</h4>
+      <p>Sign up for roof care tips, seasonal maintenance reminders, and promotions.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Copyright. All rights reserved by The Roofing Network.</p>
+    <p>Your Roofing Solutions</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
